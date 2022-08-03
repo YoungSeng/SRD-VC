@@ -99,7 +99,7 @@ for item in os.listdir(generate_wav_path)[::-1]:
         axes[1].plot(f0_norm, color='#9467bd', label='Rhythm Conversion', linewidth=2)
     elif "_U.wav" in item:
         # plt.subplot(211)
-        axes[0].plot(f0_norm[:105], color='#d62728',label='Timbre Conversion', linewidth=2)
+        axes[0].plot(f0_norm, color='#d62728',label='Timbre Conversion', linewidth=2)
     elif "_F.wav" in item:
         # plt.subplot(211)
         axes[0].plot(f0_norm, color='#2ca02c',label='Pitch Conversion', linewidth=2)

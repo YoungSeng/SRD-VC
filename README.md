@@ -30,44 +30,53 @@ Run the inference scripts: `inference.py`
 
 You may refer to the following: `WER.py`, `mcd.py`, `f0_pcc.py`, `draw_f0_distributions.py`, `draw_speaker_embedding.py`
 
-## 5. References
+## 5. Acknowledgement and References
+
+ This work is supported by National Natural Science Foundation of China (NSFC)
+(62076144), National Social Science Foundation of China
+(NSSF) (13&ZD189) and Shenzhen Key Laboratory of
+next generation interactive media innovative technology
+(ZDSYS20210623092001004).
 
 Our work mainly inspired by:
 
 (1) [SpeechSplit](https://github.com/auspicious3000/SpeechSplit#readme):
-```
-K. Qian, Y. Zhang, S. Chang, M. Hasegawa-Johnson, and D. Cox, “Unsupervised speech decomposition via triple information bottleneck,” in International Conference on Machine Learning. PMLR, 2020, pp. 7836–7846.
-```
+
+> K. Qian, Y. Zhang, S. Chang, M. Hasegawa-Johnson, and D. Cox, “Unsupervised speech decomposition via triple information bottleneck,” in International Conference on Machine Learning. PMLR, 2020, pp. 7836–7846.
+
 
 (2) [VQMIVC](https://github.com/Wendison/VQMIVC):
-```
-D. Wang, L. Deng, Y. T. Yeung, X. Chen, X. Liu, and H. Meng, “VQMIVC: Vector Quantization and Mutual Information-Based Unsupervised Speech Representation Disentanglement for OneShot Voice Conversion,” in Interspeech, 2021, pp. 1344–1348.
-```
+
+
+> D. Wang, L. Deng, Y. T. Yeung, X. Chen, X. Liu, and H. Meng, “VQMIVC: Vector Quantization and Mutual Information-Based Unsupervised Speech Representation Disentanglement for One-Shot Voice Conversion,” in Interspeech, 2021, pp. 1344–1348.
+
+
 
 (3) ClsVC:
-```
-H. Tang, X. Zhang, J. Wang, N. Cheng, and J. Xiao, “Clsvc: Learning speech representations with two different classification tasks.” Openreview, 2021, https://openreview.net/forum?id=xp2D-1PtLc5.
-```
 
-[comment]: <> (## 5. Citation)
+> H. Tang, X. Zhang, J. Wang, N. Cheng, and J. Xiao, “Clsvc: Learning speech representations with two different classification tasks.” Openreview, 2021, https://openreview.net/forum?id=xp2D-1PtLc5.
 
-[comment]: <> (If you find our work useful in your research, please consider citing:)
 
-[comment]: <> (```)
 
-[comment]: <> (@inproceedings{yang2022Speech,)
 
-[comment]: <> (  author={SiCheng Yang and Methawee Tantrawenith and Haolin Zhuang and Zhiyong Wu and Aolan Sun and Jianzong Wang and ning cheng and Huaizhen Tang and Xintao Zhao and Jie Wang and Helen Meng},)
 
-[comment]: <> (  title={{Speech Representation Disentanglement with Adversarial Mutual Information Learning for One-shot Voice Conversion}},)
-
-[comment]: <> (  year=2022,)
-
-[comment]: <> (  booktitle={Proc. Interspeech 2022},)
-
-[comment]: <> (})
-
-[comment]: <> (```)
 [comment]: <> (  pages={846--850},)
 
 [comment]: <> (  doi={10.21437/Interspeech.2021-1990})
+
+## 6. Citation
+
+If you find our work useful in your research, please consider citing:
+
+```
+@inproceedings{yang2022speech,
+  author={SiCheng Yang and Methawee Tantrawenith and Haolin Zhuang and Zhiyong Wu and Aolan Sun and Jianzong Wang and ning cheng and Huaizhen Tang and Xintao Zhao and Jie Wang and Helen Meng},
+  title={{Speech Representation Disentanglement with Adversarial Mutual Information Learning for One-shot Voice Conversion}},
+  year=2022,
+  booktitle={Proc. Interspeech 2022},
+}
+```
+
+Please feel free to contact us ([yangsc21@mails.tsinghua.edu.cn](yangsc21@mails.tsinghua.edu.cn)) with any question or concerns.
+
+
