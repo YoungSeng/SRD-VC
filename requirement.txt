@@ -1,0 +1,12 @@
+librosa==0.8.1
+matplotlib==3.4.2
+numpy==1.20.3
+pysptk==0.1.20
+scikit_learn==1.1.1
+scipy==1.7.1
+six==1.16.0
+SoundFile==0.10.3.post1
+torch==1.9.1
+argparse
+pyworld
+espnet_model_zoo
