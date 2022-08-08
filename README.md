@@ -1,16 +1,18 @@
 # Speech Representation Disentanglement with Adversarial Mutual Information Learning for One-shot Voice Conversion
 
-## 1. Demo Page
+### [Paper](https://github.com/YoungSeng/Interspeech2022/files/9282544/571_Paper.pdf) | [Demo](https://im1eon.github.io/IS2022-SRDVC/)
 
-The demo  can be found [here](https://im1eon.github.io/IS2022-SRDVC/)
+<div align=center>
+<img src="overview.png" width="500px">
+</div>
 
-## 2. Dependencies
+## 1. Dependencies
 
 Install required python packages:
 
 `pip install -r requirements.txt`
 
-## 3. Quick Start
+## 2. Quick Start
 
 Download pre-trained model from [here](https://cloud.tsinghua.edu.cn/f/f3f8106a8cda46c5af56/?dl=1) and put it into `My_model/my_demo`.
 
@@ -22,7 +24,7 @@ Run `python demo.py` and you will get the converted audio `.wav` in `/my_demo` s
 
 You else can choose the conditions in `demo.py`.
 
-## 4. Preparation, Training and Inference
+## 3. Preparation, Training and Inference
 
 Download the VCTK dataset.
 
@@ -38,11 +40,11 @@ Generate testing metadata: `make_test_metadata.py`.
 
 Run the inference scripts: `inference.py`
 
-## 5. Evaluation
+## 4. Evaluation
 
 You may refer to the following: `WER.py`, `mcd.py`, `f0_pcc.py`, `draw_f0_distributions.py`, `draw_speaker_embedding.py`
 
-## 6. Acknowledgement and References
+## 5. Acknowledgement and References
 
  This work is supported by National Natural Science Foundation of China (NSFC)
 (62076144), National Social Science Foundation of China
@@ -76,7 +78,7 @@ Our work mainly inspired by:
 
 [comment]: <> (  doi={10.21437/Interspeech.2021-1990})
 
-## 7. Citation
+## 6. Citation
 
 If you find our work useful in your research, please consider citing:
 
