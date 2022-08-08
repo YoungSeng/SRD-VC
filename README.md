@@ -16,7 +16,9 @@ Download our pre-trained model from here.
 
 Download Speechsplit pre-trained model (pitch decoder `640000-P.ckpt` and vocoder `checkpoint_step001000000_ema.pth`) from [here](https://github.com/auspicious3000/SpeechSplit).
 
-Then `cd My_model`and run `python demo.py` and you will get the converted audio `.wav` in `/my_demo` same like `test_result`.
+Then `cd My_model` and modify paths in `demo.py` to your own paths.
+
+Run `python demo.py` and you will get the converted audio `.wav` in `/my_demo` same like `test_result`.
 
 You else can choose the conditions in `demo.py`.
 
