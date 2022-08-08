@@ -12,7 +12,7 @@ Install required python packages:
 
 ## 3. Quick Start
 
-Download our pre-trained model from here.
+Download pre-trained model from [here](https://cloud.tsinghua.edu.cn/f/f3f8106a8cda46c5af56/?dl=1) and put it into `My_model/my_demo`.
 
 Download Speechsplit pre-trained model (pitch decoder `640000-P.ckpt` and vocoder `checkpoint_step001000000_ema.pth`) from [here](https://github.com/auspicious3000/SpeechSplit).
 
