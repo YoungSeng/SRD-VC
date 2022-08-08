@@ -9,7 +9,7 @@ from model import Generator_6 as F0_Converter
 from model import Generator_MI, Generator_Decoder
 import os
 
-device = 'cuda:5'
+device = 'cuda:0'
 
 use_VQCPC = False
 use_VQCPC_2 = False
@@ -18,10 +18,10 @@ use_pitch = True
 G1 = Generator_MI(hparams_, use_VQCPC, use_VQCPC_2).eval().to(device)
 G2 = Generator_Decoder(hparams_, use_pitch).eval().to(device)
 
-G1 = torch.nn.DataParallel(G1, device_ids=[5, 0], output_device=5)  # 主要就是这句
-G2 = torch.nn.DataParallel(G2, device_ids=[5, 0], output_device=5)  # 主要就是这句
+G1 = torch.nn.DataParallel(G1, device_ids=[0, 1], output_device=0)  # 主要就是这句
+G2 = torch.nn.DataParallel(G2, device_ids=[0, 1], output_device=0)  # 主要就是这句
 
-G_path = "/ceph/home/yangsc21/Python/autovc/My_model/run_pitch_2/models/800000-G.ckpt"
+G_path = "/ceph/home/yangsc21/Python/autovc/My_model/my_demo/800000-G.ckpt"
 g_checkpoint = torch.load(G_path, map_location=lambda storage, loc: storage)
 G1.load_state_dict(g_checkpoint['G1'])
 G2.load_state_dict(g_checkpoint['G2'])
@@ -33,7 +33,7 @@ p_checkpoint = torch.load(P_path, map_location=lambda storage, loc: storage)
 P.load_state_dict(p_checkpoint['model'])
 
 # test_pkl_path = "/ceph/home/yangsc21/Python/autovc/SpeechSplit/assets/test_mel/test.pkl"
-test_pkl_path = "/ceph/home/yangsc21/Python/autovc/My_model/assets/test_spmel_/test.pkl"
+test_pkl_path = "/ceph/home/yangsc21/Python/autovc/My_model/assets/test_spmel/test.pkl"
 metadata = pickle.load(open(test_pkl_path, "rb"))
 
 MAX_LEN = 128 * 3       # 192
@@ -85,8 +85,8 @@ with torch.no_grad():
     f0_con_onehot[0, torch.arange(MAX_LEN), f0_pred_quantized] = 1
 uttr_f0_trg = torch.cat((uttr_org_pad, f0_con_onehot), dim=-1)
 
-# conditions = ['FU']
-conditions = ['U', 'R', 'F', 'RF', 'RU', 'FU', 'RFU']
+conditions = ['U']
+# conditions = ['U', 'R', 'F', 'RF', 'RU', 'FU', 'RFU']
 spect_vc = []
 with torch.no_grad():
     for condition in conditions:
@@ -132,7 +132,7 @@ checkpoint = torch.load("/ceph/home/yangsc21/Python/autovc/autovc/checkpoint_ste
 model.load_state_dict(checkpoint["state_dict"])
 
 # result_path = "/ceph/home/yangsc21/Python/autovc/Final/test_wav_16000/"
-result_path = "/ceph/home/yangsc21/Python/autovc/My_model/assets/test_result_/"
+result_path = "/ceph/home/yangsc21/Python/autovc/My_model/my_demo/"
 
 
 for spect in spect_vc:

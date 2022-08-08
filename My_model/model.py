@@ -188,8 +188,8 @@ class Encoder_7(nn.Module):
 
         self.interp = InterpLnr(hparams)
 
-        # self.codebook = VQEmbeddingEMA(n_embeddings=512, embedding_dim=512+256)
-        # self.rnn = nn.LSTM(512+256, 256, batch_first=True)
+        self.codebook = VQEmbeddingEMA(n_embeddings=512, embedding_dim=512+256)
+        self.rnn = nn.LSTM(512+256, 256, batch_first=True)
 
     def forward(self, x_f0):  # (batch, 337, max_len_pad)
 

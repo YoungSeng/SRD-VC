@@ -10,7 +10,15 @@ Install required python packages:
 
 `pip install -r requirements.txt`
 
-## 3. Preparation, Training and Inference
+## 3. Quick Start
+
+Download our pre-trained model from here.
+
+Download Speechsplit pre-trained model (pitch decoder `640000-P.ckpt` and vocoder `checkpoint_step001000000_ema.pth`) from [here](https://github.com/auspicious3000/SpeechSplit).
+
+Run `demo.py` and you will get the converted audio `.wav` in `/my_demo`.
+
+## 4. Preparation, Training and Inference
 
 Download the VCTK dataset.
 
@@ -26,11 +34,11 @@ Generate testing metadata: `make_test_metadata.py`.
 
 Run the inference scripts: `inference.py`
 
-## 4. Evaluation
+## 5. Evaluation
 
 You may refer to the following: `WER.py`, `mcd.py`, `f0_pcc.py`, `draw_f0_distributions.py`, `draw_speaker_embedding.py`
 
-## 5. Acknowledgement and References
+## 6. Acknowledgement and References
 
  This work is supported by National Natural Science Foundation of China (NSFC)
 (62076144), National Social Science Foundation of China
@@ -64,7 +72,7 @@ Our work mainly inspired by:
 
 [comment]: <> (  doi={10.21437/Interspeech.2021-1990})
 
-## 6. Citation
+## 7. Citation
 
 If you find our work useful in your research, please consider citing:
 

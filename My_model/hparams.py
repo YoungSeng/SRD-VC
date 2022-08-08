@@ -33,8 +33,6 @@ hparams__ = HParams(
     # data loader
     root_dir='/ceph/home/yangsc21/Python/VCTK/wav16/spmel_100_crop_cat/',
     feat_dir='/ceph/home/yangsc21/Python/VCTK/wav16/raptf0_100_crop_cat/',
-    # root_dir="/ceph/home/yangsc21/Python/autovc/SpeechSplit/assets/spmel/",
-    # feat_dir='/ceph/home/yangsc21/Python/autovc/SpeechSplit/assets/raptf0/',
     batch_size=16,
     mode='train',
     shuffle=True,
@@ -45,19 +43,19 @@ hparams__ = HParams(
 # Default hyperparameters:
 hparams = HParams(
     # model
-    freq=8,
-    dim_neck=8 * 2,     # 8
-    freq_2=8,
-    dim_neck_2=1 * 2,
-    freq_3=8,
-    dim_neck_3=32 * 2,
-
     # freq=8,
-    # dim_neck=8,  # 8
+    # dim_neck=8 * 2,     # 8
     # freq_2=8,
-    # dim_neck_2=1,
+    # dim_neck_2=1 * 2,
     # freq_3=8,
-    # dim_neck_3=32,
+    # dim_neck_3=32 * 2,
+
+    freq=8,
+    dim_neck=8,  # 8
+    freq_2=8,
+    dim_neck_2=1,
+    freq_3=8,
+    dim_neck_3=32,
 
     dim_enc=512,        # 512
     dim_enc_2=128,
@@ -80,8 +78,6 @@ hparams = HParams(
     # data loader
     root_dir='/ceph/home/yangsc21/Python/VCTK/wav16/spmel_100_crop_cat/',
     feat_dir='/ceph/home/yangsc21/Python/VCTK/wav16/raptf0_100_crop_cat/',
-    # root_dir="/ceph/home/yangsc21/Python/autovc/SpeechSplit/assets/spmel/",
-    # feat_dir='/ceph/home/yangsc21/Python/autovc/SpeechSplit/assets/raptf0/',
     batch_size=16,
     mode='train',
     shuffle=True,
