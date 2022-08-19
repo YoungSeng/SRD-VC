@@ -1,6 +1,6 @@
 # Speech Representation Disentanglement with Adversarial Mutual Information Learning for One-shot Voice Conversion
 
-### [Paper](https://github.com/YoungSeng/Interspeech2022/files/9282544/571_Paper.pdf) | [Demo](https://im1eon.github.io/IS2022-SRDVC/)
+### [Paper](https://arxiv.org/abs/2208.08757) | [Demo](https://im1eon.github.io/IS2022-SRDVC/)
 
 <div align=center>
 <img src="overview.png" width="500px">
