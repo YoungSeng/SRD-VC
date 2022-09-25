@@ -1,6 +1,6 @@
 # Speech Representation Disentanglement with Adversarial Mutual Information Learning for One-shot Voice Conversion
 
-### [Paper](https://arxiv.org/abs/2208.08757) | [Demo](https://im1eon.github.io/IS2022-SRDVC/)
+### [Paper](https://www.isca-speech.org/archive/interspeech_2022/yang22f_interspeech.html) | [Demo](https://im1eon.github.io/IS2022-SRDVC/)
 
 <div align=center>
 <img src="overview.png" width="500px">
@@ -83,11 +83,13 @@ Our work mainly inspired by:
 If you find our work useful in your research, please consider citing:
 
 ```
-@inproceedings{yang2022speech,
-  author={SiCheng Yang and Methawee Tantrawenith and Haolin Zhuang and Zhiyong Wu and Aolan Sun and Jianzong Wang and ning cheng and Huaizhen Tang and Xintao Zhao and Jie Wang and Helen Meng},
+@inproceedings{yang22f_interspeech,
+  author={SiCheng Yang and Methawee Tantrawenith and Haolin Zhuang and Zhiyong Wu and Aolan Sun and Jianzong Wang and Ning Cheng and Huaizhen Tang and Xintao Zhao and Jie Wang and Helen Meng},
   title={{Speech Representation Disentanglement with Adversarial Mutual Information Learning for One-shot Voice Conversion}},
   year=2022,
   booktitle={Proc. Interspeech 2022},
+  pages={2553--2557},
+  doi={10.21437/Interspeech.2022-571}
 }
 ```
 
