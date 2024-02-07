@@ -16,7 +16,7 @@ Install required python packages:
 
 ## 2. Quick Start
 
-Download pre-trained model from [TsinghuaCloud](https://cloud.tsinghua.edu.cn/f/f3f8106a8cda46c5af56/?dl=1) or [BaiduNetDisk](https://pan.baidu.com/s/1M06ecBhdb3D2ndaeTKCZ4A?pwd=0123) and put it into `My_model/my_demo`.
+Download pre-trained model from [TsinghuaCloud](https://cloud.tsinghua.edu.cn/f/f3f8106a8cda46c5af56/?dl=1), [GoogleDrive](https://drive.google.com/file/d/1SxWrLZjG9qLzWOy68Awa3JTa1aqUQP7R/view?usp=sharing) or [BaiduNetDisk](https://pan.baidu.com/s/1M06ecBhdb3D2ndaeTKCZ4A?pwd=0123) and put it into `My_model/my_demo`.
 
 Download Speechsplit pre-trained model (pitch decoder `640000-P.ckpt` and vocoder `checkpoint_step001000000_ema.pth`) from [here](https://github.com/auspicious3000/SpeechSplit).
 
